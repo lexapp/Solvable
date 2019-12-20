@@ -1,0 +1,59 @@
+
+<?php
+
+if (isset(isset($_COOKIE['username'])) {
+  header('location: ./user/member.php');
+}
+
+?>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./images/hello-icon-152.png">
+  <meta name="theme-color" content="white" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Solvable">
+  <meta name="msapplication-TileImage" content="./favicon.ico">
+  <meta name="msapplication-TileColor" content="#FFFFG2">
+  <meta charset="utf-8">
+  <title>Solvable</title>
+  <link rel="stylesheet" href="./style.css?v=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="fullscreen">
+  <div class="container">
+    <h1 class="title">Solvable</h1>
+    <p id="welcome">Welcome to the Solvable app for LHS. The following app will allow you to:</p>
+    <p>View study guides for the classes you are taking</p>
+    <p>Upload study guides for classes for other app users to see</p>
+    <p>Open "tickets" to gain support from peers</p>
+    <h3>If you are ready to start, click the button below to Sign Up!</h3>
+    <button onclick="location.href='./user/register.php'" type="button">Sign Up!</button><br />    
+    <p id="login">Or <a href="./user/login.php">Login</a> if you have an account</p>
+  </div>
+</body>
+</div>
+    </body>
+    </div>
+<script src="./js/main.js"></script>
+<script>
+
+  $("webScreen").hide();
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('./sw.js')
+      .then(function () {
+        console.log("Service Worker Registered");
+      });
+  }
+</script>
+
+
+</html>
